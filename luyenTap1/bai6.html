@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] =+ prompt("Nhập vào số thứ " + (i + 1))
+    }
+    let V = +prompt("Nhập vào 1 số ngẫu nhiên để tìm trong mảng ")
+    if (arr.indexOf(V) !== -1 ){
+        document.write("V is in the array")
+    } else {
+        document.write("V is not in the array")
+    }
+
+</script>
+</body>
+</html>
