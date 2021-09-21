@@ -7,19 +7,19 @@
 <body>
 <script>
     let arr = []
-    for (let i = 0; i < 3; i++) {
-        let a = +prompt('nhập vào số thứ' + (i + 1))
+    for (let i = 0; i < 10; i++) {
+        arr[i]= +prompt('nhập vào số thứ' + (i + 1))
     }
     let v = +prompt('nhập vào số ngẫu nhiên')
     let a = arr.indexOf(v)
-    if (arr.indexOf(v) !== -1) {
+    if (a !==-1) {
         for (let i = a; i < arr.length; i++) {
             arr[i] = arr[i + 1]
         }
         arr.pop()
 
     }
-    document.write(arr)
+   console.log(arr)
 </script>
 </body>
 </html>
